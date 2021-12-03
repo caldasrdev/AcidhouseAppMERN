@@ -1,0 +1,25 @@
+.social-media {
+    background-color: #FFA07A;
+    padding-top: 1%;
+    /* opacity: 60%; */
+    height: 60px;
+    display: flex;
+    color: grey;
+    justify-content: center;
+}
+
+.social-media h2 {
+    text-align: center;
+}
+
+.social {
+    text-align: center;
+}
+
+.social li {
+    display: inline-block;
+}
+
+.social a {
+    padding: 10px;
+}

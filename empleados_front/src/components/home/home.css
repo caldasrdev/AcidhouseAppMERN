@@ -1,0 +1,16 @@
+#carousel-container h1, p {
+    text-align: center;
+}
+#carousel-container {
+    margin-top: 10%;
+    text-align: center;
+}
+
+h1, p {
+    text-align: center;
+}
+
+#cardButton {
+    background-color: #8b0000;
+    border-color: #8b0000;
+}

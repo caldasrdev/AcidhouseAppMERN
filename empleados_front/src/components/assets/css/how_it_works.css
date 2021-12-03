@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.card-wrap{
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+.card{
+    width: 300px;
+    height: 350px;
+    background: #ff8c00;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+.front .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.front{
+    margin: 100%;   
+}
+.card-wrap:hover .card{
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+.card1{
+    background-image: url(../Assets/Card_1.png);
+    background-size: cover;
+}
+.card2{
+    background-image: url(../Assets/Card_2.png);
+    background-size: cover;
+}
+.card3{
+    background-image: url(../Assets/Card_3.png);
+    background-size: cover;
+}
+
+
+
+/* Intento 2 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background: #FFA07A;
+}
+
+.container_card {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_father {
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card_father:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card_front,
+.card_back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card_back {
+    transform: rotateY(180deg);
+    background: #FF8C00;
+}
+
+.card_front {
+    background-size: cover;
+    background-position: center;
+}
+
+.body_front {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF8C00;
+    transform: translateZ(60px);
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.body_back {
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body_back p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.body_back input {
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #FFA07A;
+    box-shadow: 1px 1px 30px -5p;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}

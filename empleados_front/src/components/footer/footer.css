@@ -1,0 +1,41 @@
+.social-media {
+    /* background-color: #ffa07a; */
+    padding-top: 2%;
+    /* opacity: 60%; */
+    height: 55px;
+    display: flex;
+    color: #8b0000;
+    justify-content: center;
+}
+
+.social-media h4 {
+    text-align: center;
+    display: inline-block;
+}
+
+  .social {
+  
+    text-align: center;
+}
+
+.social li {
+  
+    display: inline-block;
+}
+
+.social a {
+ 
+    padding: 15px;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+        padding-top: 5%;
+    background: #ffa07a;
+}
